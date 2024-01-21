@@ -5,6 +5,38 @@
   font-family: "Poppins", monospace, sans-serif;
 }
 
+@keyframes phone-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes title-load {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes text-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bg-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
 body {
   height: 100svh;
   width: 100vw;
@@ -24,11 +56,13 @@ body main {
   width: 80%;
   margin: 75px 0px;
   border-radius: 25px;
+  animation: 1s ease-in-out 0s 1 bg-load;
 }
 body main nav {
   margin-top: 25px;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  animation: 1s ease-out 0s 1 text-load;
 }
 @media (max-width: 882px) {
   body main nav {
@@ -54,10 +88,15 @@ body main nav .sections-container ul {
 body main nav .sections-container ul li {
   float: left;
   font-weight: 300;
+  cursor: pointer;
 }
 body main nav .account-buttons .login-btn, body main nav .account-buttons .sign-up-btn {
   background-color: rgb(29, 120, 139);
   font-weight: 700;
+  color: black;
+}
+body main nav .account-buttons .login-btn:hover, body main nav .account-buttons .sign-up-btn:hover {
+  color: black;
 }
 body main .info-display {
   flex-direction: row;
@@ -81,6 +120,9 @@ body main .info-display {
     transform: translateY(5%);
   }
 }
+body main .info-display .info .information-details {
+  animation: 1s ease-out 0s 1 title-load;
+}
 body main .info-display .info .information-details h1, body main .info-display .info .information-details h6 {
   color: rgb(154, 189, 169);
 }
@@ -96,6 +138,7 @@ body main .info-display .phone-display {
   height: 545px;
   background-color: rgb(27, 27, 27);
   border-radius: 10px;
+  animation: 1s ease-out 0s 1 phone-load;
 }
 @media (max-width: 1052px) {
   body main .info-display .phone-display {

@@ -10,6 +10,42 @@ $button-color: rgba(29,120,139,255);
 $text-color: rgba(154,189,169,255);
 $div-color: rgba(29,120,139,255);
 
+@keyframes phone-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes title-load {
+  0% {
+    transform: translateY(100%)
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes text-load  {
+  0% {
+    transform: translateX(-100%)
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bg-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
 body {
   height: 100svh;
   width: 100vw;
@@ -28,10 +64,12 @@ body {
     width: 80%;
     margin: 75px 0px;
     border-radius: 25px;
+    animation: 1s ease-in-out 0s 1 bg-load;
 
     nav {
       margin-top: 25px;
       column-gap: 30px;
+      animation: 1s ease-out 0s 1 text-load;
 
       @media (max-width: 882px) {
         column-gap: 10px;
@@ -52,6 +90,7 @@ body {
           li {
             float: left;
             font-weight: 300;
+            cursor: pointer;
           }
         }
       }
@@ -61,6 +100,10 @@ body {
         .login-btn, .sign-up-btn{
           background-color: $button-color;
           font-weight: 700;
+          color: black;
+        }
+        .login-btn:hover, .sign-up-btn:hover {
+          color: black;
         }
       }
     }
@@ -87,7 +130,7 @@ body {
       .info {
 
         .information-details {
-
+          animation: 1s ease-out 0s 1 title-load;
 
           h1, h6 {
             color: $text-color;
@@ -109,6 +152,7 @@ body {
         height: 545px;
         background-color: rgb(27, 27, 27);
         border-radius: 10px;
+        animation: 1s ease-out 0s 1 phone-load;
 
         @media (max-width: 1052px) {
           width: 332px;
