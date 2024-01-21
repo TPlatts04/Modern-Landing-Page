@@ -91,6 +91,10 @@ body {
             float: left;
             font-weight: 300;
             cursor: pointer;
+            a {
+              color: $text-color;
+              text-decoration: none;
+            }
           }
         }
       }

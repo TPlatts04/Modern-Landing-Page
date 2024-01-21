@@ -90,6 +90,10 @@ body main nav .sections-container ul li {
   font-weight: 300;
   cursor: pointer;
 }
+body main nav .sections-container ul li a {
+  color: rgb(154, 189, 169);
+  text-decoration: none;
+}
 body main nav .account-buttons .login-btn, body main nav .account-buttons .sign-up-btn {
   background-color: rgb(29, 120, 139);
   font-weight: 700;
