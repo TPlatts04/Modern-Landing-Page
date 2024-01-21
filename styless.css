@@ -24,7 +24,7 @@ body nav {
   margin-top: 25px;
 }
 body nav .sections-container {
-  color: white;
+  color: rgb(235, 209, 160);
 }
 body nav .sections-container ul {
   list-style: none;
@@ -35,6 +35,6 @@ body nav .sections-container ul li {
   font-weight: 300;
 }
 body nav .account-buttons .login-btn, body nav .account-buttons .sign-up-btn {
-  background-color: rgb(188, 142, 194);
+  background-color: rgb(29, 120, 139);
   font-weight: 700;
 }/*# sourceMappingURL=styless.css.map */
