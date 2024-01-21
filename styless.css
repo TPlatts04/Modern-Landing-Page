@@ -52,6 +52,90 @@ body main .info-display .info .information-details .download-btn {
   font-weight: 700;
 }
 body main .info-display .phone-display {
-  width: 20%;
-  height: 50svh;
+  width: 18%;
+  height: 55svh;
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+}
+body main .info-display .phone-display .phone-background {
+  margin-top: 2%;
+  width: 97%;
+  height: 53.8svh;
+  background-color: rgb(1, 22, 26);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.158) inset;
+}
+body main .info-display .phone-display .phone-background .header-items {
+  color: white;
+  font-size: 15px;
+  opacity: 0.65;
+}
+body main .info-display .phone-display .phone-background .card-container {
+  background-image: url("./Secondary Files/card-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+body main .info-display .phone-display .phone-background .card-container .card-info {
+  font-size: 14px;
+  color: rgb(154, 189, 169);
+}
+body main .info-display .phone-display .phone-background .card-container .card-info .cc-balance {
+  font-weight: 700;
+}
+body main .info-display .phone-display .phone-background hr {
+  width: 12%;
+  border: dotted white 4px;
+  border-bottom: none;
+}
+body main .info-display .phone-display .phone-background .spending-info .credit-limits, body main .info-display .phone-display .phone-background .spending-info .monthly-spend {
+  background-color: rgb(29, 120, 139);
+  border-radius: 10px;
+  padding: 5px;
+  width: 50%;
+}
+body main .info-display .phone-display .phone-background .spending-info .credit-limits p, body main .info-display .phone-display .phone-background .spending-info .monthly-spend p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 700;
+}
+body main .info-display .phone-display .phone-background .spending-info .credit-limits p span, body main .info-display .phone-display .phone-background .spending-info .monthly-spend p span {
+  font-weight: 500;
+  margin-right: 2px;
+}
+body main .info-display .phone-display .phone-background .spending-history {
+  margin-top: 20px;
+  width: 100%;
+  color: rgb(154, 189, 169);
+}
+body main .info-display .phone-display .phone-background .spending-history h4 {
+  margin: 20px 0px;
+  font-size: 18px;
+}
+body main .info-display .phone-display .phone-background .spending-history .spends {
+  width: 100%;
+}
+body main .info-display .phone-display .phone-background .spending-history .spends .location-time {
+  font-size: 8px;
+}
+body main .info-display .phone-display .phone-background .spending-history .spends p {
+  margin: 0px;
+}
+body main .info-display .phone-display .phone-background .spending-history .spends .spend-1, body main .info-display .phone-display .phone-background .spending-history .spends .spend-2, body main .info-display .phone-display .phone-background .spending-history .spends .spend-3 {
+  font-size: 14px;
+  width: 100%;
+}
+body main .info-display .phone-display .phone-background .spending-history .spends .spend-1 .transaction-image, body main .info-display .phone-display .phone-background .spending-history .spends .spend-2 .transaction-image, body main .info-display .phone-display .phone-background .spending-history .spends .spend-3 .transaction-image {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(29, 120, 139);
+  padding: 2px 8px;
+  height: 3svh;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
 }/*# sourceMappingURL=styless.css.map */
