@@ -7,7 +7,7 @@
 }
 
 $button-color: rgba(29,120,139,255);
-$text-color: rgba(235,209,160,255);
+$text-color: rgba(154,189,169,255);
 
 body {
   width: 100vw;
@@ -23,34 +23,64 @@ body {
     width: 80%;
     margin: 75px 0px;
     border-radius: 25px;
-  }
 
-  nav {
-    margin-top: 25px;
-
-    .image-container {
-      
-    }
-
-    .sections-container {
-      color: $text-color;
-      
-      ul {
-        list-style: none;
-        margin: 0px;
-
-        li {
-          float: left;
-          font-weight: 300;
+    nav {
+      margin-top: 25px;
+  
+      .image-container {
+        
+      }
+  
+      .sections-container {
+        color: $text-color;
+        
+        ul {
+          list-style: none;
+          margin: 0px;
+  
+          li {
+            float: left;
+            font-weight: 300;
+          }
+        }
+      }
+  
+      .account-buttons {
+  
+        .login-btn, .sign-up-btn{
+          background-color: $button-color;
+          font-weight: 700;
         }
       }
     }
 
-    .account-buttons {
+    .info-display {
+      transform: translateY(30%);
 
-      .login-btn, .sign-up-btn{
-        background-color: $button-color;
-        font-weight: 700;
+      .info {
+
+        .information-details {
+
+
+          h1, h6 {
+            color: $text-color;
+          }
+        
+          h1 {
+            max-width: 15ch;
+          }
+
+          .download-btn {
+            background-color: $button-color;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .phone-display {
+        width: 20%;
+        height: 50svh;
+        
       }
     }
   }
