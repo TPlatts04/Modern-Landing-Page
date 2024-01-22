@@ -70,6 +70,9 @@ body main nav {
          column-gap: 10px;
   }
 }
+body main nav .sign-up-title {
+  color: rgb(154, 189, 169);
+}
 body main nav .sections-container {
   color: rgb(154, 189, 169);
 }
@@ -136,11 +139,13 @@ body main .info-display .info .information-details h1 {
 body main .info-display .info .information-details .download-btn {
   background-color: rgb(29, 120, 139);
   font-weight: 700;
+  color: black;
 }
 body main .info-display .phone-display {
   width: 332px;
   height: 545px;
   background-color: rgb(27, 27, 27);
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   animation: 1s ease-out 0s 1 phone-load;
 }

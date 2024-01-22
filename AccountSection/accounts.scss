@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+$button-color: rgba(29,120,139,255);
+$text-color: rgba(154,189,169,255);
+$div-color: rgba(29,120,139,255);
+
+body {
+  background: url('/Secondary Files/bg-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  overflow-x: hidden;
+
+  p {
+    color: $text-color;
+  }
+
+  @keyframes login-off-slide {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(200%);
+      visibility: hidden;
+    }
+  }
+
+  @keyframes login-on-slide {
+    0% {
+      transform: translateX(200%);
+      visibility: visible;
+    }
+    100% {
+      transform: translateX(-50%);
+      visibility: visible;
+    }
+  }
+
+  .login-main {
+    transform: translateX(-50%);
+  }
+
+  .login-animation-off {
+    animation: login-off-slide 1s ease-in-out 1 forwards;
+  }
+
+  .login-animation-on {
+    animation: login-on-slide 1s ease-in-out 1 forwards;
+  }
+
+  main{
+    background-color: rgb(14, 13, 13);
+    width: 40%;
+    overflow-x: hidden;
+
+    .login-title {
+      color: $text-color;
+      text-decoration: underline;
+    }
+
+    .login-form {
+      text-align: center;
+
+      .email-label, .password-label {
+        color: $text-color;
+        font-size: 20px;
+      }
+    }
+
+    .sign-up-text {
+      color: white;
+    }
+
+    
+    .login-text {
+      color: white;
+    }
+  }
+
+  @keyframes signup-on-slide {
+    0% {
+      transform: translateX(-200%);
+      visibility: visible;
+    }
+    100% {
+      transform: translateX(50%);
+      visibility: visible;
+    }
+  }
+
+  @keyframes signup-off-slide {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      visibility: hidden;
+      transform: translateX(-200%);
+    }
+  }
+
+  .signup-main {
+    transform: translateX(-200%);
+  }
+
+  .signup-animation-on {
+    animation: signup-on-slide 1s ease-in-out 1 forwards;
+  }
+
+  .signup-animation-off {
+    animation: signup-off-slide 1s ease-in-out 1 forwards;
+  }
+}
+
+span {
+  color: $text-color;
+  text-decoration: underline;
+  cursor: pointer;
+}

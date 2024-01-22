@@ -1,1 +1,103 @@
-/*# sourceMappingURL=accounts.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins", monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url("/Secondary Files/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  overflow-x: hidden;
+}
+body p {
+  color: rgb(154, 189, 169);
+}
+@keyframes login-off-slide {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(200%);
+    visibility: hidden;
+  }
+}
+@keyframes login-on-slide {
+  0% {
+    transform: translateX(200%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-50%);
+    visibility: visible;
+  }
+}
+body .login-main {
+  transform: translateX(-50%);
+}
+body .login-animation-off {
+  animation: login-off-slide 1s ease-in-out 1 forwards;
+}
+body .login-animation-on {
+  animation: login-on-slide 1s ease-in-out 1 forwards;
+}
+body main {
+  background-color: rgb(14, 13, 13);
+  width: 40%;
+  overflow-x: hidden;
+}
+body main .login-title {
+  color: rgb(154, 189, 169);
+  text-decoration: underline;
+}
+body main .login-form {
+  text-align: center;
+}
+body main .login-form .email-label, body main .login-form .password-label {
+  color: rgb(154, 189, 169);
+  font-size: 20px;
+}
+body main .sign-up-text {
+  color: white;
+}
+body main .login-text {
+  color: white;
+}
+@keyframes signup-on-slide {
+  0% {
+    transform: translateX(-200%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(50%);
+    visibility: visible;
+  }
+}
+@keyframes signup-off-slide {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(-200%);
+  }
+}
+body .signup-main {
+  transform: translateX(-200%);
+}
+body .signup-animation-on {
+  animation: signup-on-slide 1s ease-in-out 1 forwards;
+}
+body .signup-animation-off {
+  animation: signup-off-slide 1s ease-in-out 1 forwards;
+}
+
+span {
+  color: rgb(154, 189, 169);
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=accounts.css.map */
