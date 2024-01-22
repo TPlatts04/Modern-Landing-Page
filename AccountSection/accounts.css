@@ -13,6 +13,7 @@ body {
   flex-direction: row-reverse;
   justify-content: center;
   overflow-x: hidden;
+  min-height: 100svh;
 }
 body p {
   color: rgb(154, 189, 169);
@@ -38,6 +39,7 @@ body p {
 }
 body .login-main {
   transform: translateX(-50%);
+  height: 60%;
 }
 body .login-animation-off {
   animation: login-off-slide 1s ease-in-out 1 forwards;
@@ -88,6 +90,7 @@ body main .login-text {
 }
 body .signup-main {
   transform: translateX(-200%);
+  height: 60%;
 }
 body .signup-animation-on {
   animation: signup-on-slide 1s ease-in-out 1 forwards;

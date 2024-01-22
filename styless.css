@@ -71,7 +71,7 @@ body main nav {
   }
 }
 body main nav .sign-up-title {
-  color: rgb(154, 189, 169);
+  text-decoration: underline;
 }
 body main nav .sections-container {
   color: rgb(154, 189, 169);
