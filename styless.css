@@ -142,7 +142,7 @@ body main .info-display .info .information-details .download-btn {
   color: black;
 }
 body main .info-display .phone-display {
-  width: 300px;
+  width: 280px;
   height: 545px;
   background-color: rgb(27, 27, 27);
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
@@ -151,7 +151,7 @@ body main .info-display .phone-display {
 }
 @media (max-width: 1052px) {
   body main .info-display .phone-display {
-    width: 300px;
+    width: 280px;
     margin-bottom: 25px;
   }
 }
