@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100svh;
+  overflow-y: hidden;
 }
 body .feature-wrapper {
   background-color: rgb(14, 13, 13);
