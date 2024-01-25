@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins", monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes border-change {
+  0% {
+    border-color: rgba(128, 0, 128, 0.5);
+  }
+  25% {
+    border-color: rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    border-color: rgba(0, 255, 0, 0.5);
+  }
+  75% {
+    border-color: rgba(255, 255, 0, 0.5);
+  }
+  100% {
+    border-color: rgba(128, 0, 128, 0.5);
+  }
+}
+body {
+  background: url("/Secondary Files/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+}
+body .pricing-container {
+  background-color: rgb(14, 14, 14);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+  width: 65%;
+  min-height: 60svh;
+  flex-wrap: wrap;
+}
+body .pricing-container .pricing-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .pricing-container .pricing-wrapper .standard, body .pricing-container .pricing-wrapper .premium, body .pricing-container .pricing-wrapper .vip {
+  min-height: 550px;
+  border: 6px ridge;
+  border-radius: 10px;
+  color: white;
+}
+body .pricing-container .pricing-wrapper .standard ul, body .pricing-container .pricing-wrapper .premium ul, body .pricing-container .pricing-wrapper .vip ul {
+  height: 100%;
+  text-align: left;
+}
+body .pricing-container .pricing-wrapper .standard ul li, body .pricing-container .pricing-wrapper .premium ul li, body .pricing-container .pricing-wrapper .vip ul li {
+  text-shadow: 0px 0px 10px rgba(154, 189, 169, 0.5);
+}
+body .pricing-container .pricing-wrapper .vip {
+  width: 55%;
+  animation: border-change 12s ease-in-out infinite forwards;
+}
+body .pricing-container .pricing-wrapper h1 {
+  color: rgb(154, 189, 169);
+  text-decoration: underline;
+}
+body .pricing-container .pricing-wrapper p {
+  color: rgb(154, 189, 169);
+}
+
+@media (max-width: 1220px) {
+  .pricing-wrapper {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  .standard, .premium, .vip {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=pricing-styles.css.map */

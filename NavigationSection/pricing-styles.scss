@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+$button-color: rgba(29,120,139,255);
+$text-color: rgba(154,189,169,255);
+$div-color: rgba(29,120,139,255);
+
+@keyframes border-change {
+  0% {
+    border-color: rgba(128, 0, 128, 0.5);
+  }
+  25% {
+    border-color: rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    border-color: rgba(0,255,0,0.5);
+  }
+  75% {
+    border-color: rgba(255, 255, 0, 0.5);
+  }
+  100% {
+    border-color: rgba(128, 0, 128, 0.5);
+  }
+}
+
+body {
+  background: url('/Secondary Files/bg-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+
+
+  .pricing-container {
+    background-color: rgb(14,14,14);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    width: 65%;
+    min-height: 60svh;
+    flex-wrap: wrap;
+    
+    .pricing-wrapper {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .standard, .premium, .vip {
+        min-height: 550px;
+        border: 6px ridge;
+        border-radius: 10px;
+        color: white;
+        
+        ul {
+          height: 100%;
+          text-align: left;
+
+          li {
+            text-shadow: 0px 0px 10px rgba(154,189,169,0.5);
+          }
+        }
+      }
+
+      .vip {
+        width: 55%;
+        animation: border-change 12s ease-in-out infinite forwards;
+      }
+
+      h1 {
+        color: $text-color;
+        text-decoration: underline;
+      }
+      p {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .pricing-wrapper {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+
+  .standard, .premium, .vip {
+    width: 100% !important;
+  }
+}
