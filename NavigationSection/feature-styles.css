@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins", monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes load-animation {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+body {
+  background: url("/Secondary Files/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+}
+body .feature-wrapper {
+  background-color: rgb(14, 13, 13);
+  width: 80%;
+  height: 60%;
+  transform: translateY(-150%);
+  animation: load-animation 1000ms ease-in-out 1 forwards;
+}
+body .feature-wrapper .feature-title {
+  color: rgb(154, 189, 169);
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+body .feature-wrapper .features ul li {
+  font-size: 25px;
+  color: rgb(154, 189, 169);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+body .feature-wrapper .features ul li span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+body .feature-wrapper .sign-up-btn {
+  background-color: rgb(29, 120, 139);
+  color: white;
+  font-size: 20px;
+  transition: all 200ms ease-in-out;
+}
+body .feature-wrapper .sign-up-btn:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}/*# sourceMappingURL=feature-styles.css.map */
