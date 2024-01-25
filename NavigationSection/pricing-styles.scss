@@ -10,21 +10,21 @@ $button-color: rgba(29,120,139,255);
 $text-color: rgba(154,189,169,255);
 $div-color: rgba(29,120,139,255);
 
-@keyframes border-change {
+@keyframes load {
   0% {
-    border-color: rgba(128, 0, 128, 0.5);
-  }
-  25% {
-    border-color: rgba(0, 0, 255, 0.5);
-  }
-  50% {
-    border-color: rgba(0,255,0,0.5);
-  }
-  75% {
-    border-color: rgba(255, 255, 0, 0.5);
+    transform: translateY(-150%);
   }
   100% {
-    border-color: rgba(128, 0, 128, 0.5);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes load-right {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
@@ -40,7 +40,15 @@ body {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
     width: 65%;
     min-height: 60svh;
-    flex-wrap: wrap;
+
+    .pricing-title {
+      width: 100%;
+      transform: translateX(150%);
+      animation: load-right 1300ms ease-out 0s 1 forwards;
+      text-decoration: underline;
+      text-align: center;
+      color: $text-color;
+    }
     
     .pricing-wrapper {
       text-align: center;
@@ -53,6 +61,7 @@ body {
         border: 6px ridge;
         border-radius: 10px;
         color: white;
+        transform: translateY(-150%);
         
         ul {
           height: 100%;
@@ -63,10 +72,17 @@ body {
           }
         }
       }
+      .standard {
+        animation: load 500ms ease-out 0s 1 forwards;
+      }
+
+      .premium {
+        animation: load 500ms ease-out 500ms 1 forwards;
+      }
 
       .vip {
         width: 55%;
-        animation: border-change 12s ease-in-out infinite forwards;
+        animation: load 500ms ease-out 1s 1 forwards;
       }
 
       h1 {

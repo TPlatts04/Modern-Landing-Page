@@ -5,21 +5,20 @@
   padding: 0px;
 }
 
-@keyframes border-change {
+@keyframes load {
   0% {
-    border-color: rgba(128, 0, 128, 0.5);
-  }
-  25% {
-    border-color: rgba(0, 0, 255, 0.5);
-  }
-  50% {
-    border-color: rgba(0, 255, 0, 0.5);
-  }
-  75% {
-    border-color: rgba(255, 255, 0, 0.5);
+    transform: translateY(-150%);
   }
   100% {
-    border-color: rgba(128, 0, 128, 0.5);
+    transform: translateY(0%);
+  }
+}
+@keyframes load-right {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 body {
@@ -33,7 +32,14 @@ body .pricing-container {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
   width: 65%;
   min-height: 60svh;
-  flex-wrap: wrap;
+}
+body .pricing-container .pricing-title {
+  width: 100%;
+  transform: translateX(150%);
+  animation: load-right 1300ms ease-out 0s 1 forwards;
+  text-decoration: underline;
+  text-align: center;
+  color: rgb(154, 189, 169);
 }
 body .pricing-container .pricing-wrapper {
   text-align: center;
@@ -46,6 +52,7 @@ body .pricing-container .pricing-wrapper .standard, body .pricing-container .pri
   border: 6px ridge;
   border-radius: 10px;
   color: white;
+  transform: translateY(-150%);
 }
 body .pricing-container .pricing-wrapper .standard ul, body .pricing-container .pricing-wrapper .premium ul, body .pricing-container .pricing-wrapper .vip ul {
   height: 100%;
@@ -54,9 +61,15 @@ body .pricing-container .pricing-wrapper .standard ul, body .pricing-container .
 body .pricing-container .pricing-wrapper .standard ul li, body .pricing-container .pricing-wrapper .premium ul li, body .pricing-container .pricing-wrapper .vip ul li {
   text-shadow: 0px 0px 10px rgba(154, 189, 169, 0.5);
 }
+body .pricing-container .pricing-wrapper .standard {
+  animation: load 500ms ease-out 0s 1 forwards;
+}
+body .pricing-container .pricing-wrapper .premium {
+  animation: load 500ms ease-out 500ms 1 forwards;
+}
 body .pricing-container .pricing-wrapper .vip {
   width: 55%;
-  animation: border-change 12s ease-in-out infinite forwards;
+  animation: load 500ms ease-out 1s 1 forwards;
 }
 body .pricing-container .pricing-wrapper h1 {
   color: rgb(154, 189, 169);
