@@ -68,4 +68,7 @@ body {
       }
     }
   }
+  .help-container::-webkit-scrollbar {
+    display: none;
+  }
 }
