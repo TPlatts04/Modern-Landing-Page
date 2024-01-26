@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+$button-color: rgba(29,120,139,255);
+$text-color: rgba(154,189,169,255);
+$div-color: rgba(29,120,139,255);
+
+@keyframes load-h4 {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes load-list {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+body {
+  background: url('/Secondary Files/bg-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+  overflow-y: hidden;
+
+  .help-container {
+    background-color: rgb(14,14,14);
+    height: 70svh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+      .help-title {
+        color: $text-color;
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.4);
+      }
+
+      .problem {
+        color: rgba(255,255,255,0.6);
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+    .help-wrapper {
+      h4 {
+        color: white;
+        transform: translateX(150%);
+        animation: load-h4 1000ms ease-out 0s 1 forwards;
+      }
+
+      .item-1, .item-2, .item-3, .item-4, .item-5 {
+        color: $text-color;
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.4);
+        transform: translateX(-150%);
+        animation: load-list 1000ms ease-out 0s 1 forwards;
+      }
+    }
+  }
+  .help-container::-webkit-scrollbar {
+    display: none;
+  }
+}

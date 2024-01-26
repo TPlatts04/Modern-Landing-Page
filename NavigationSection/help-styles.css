@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins", monospace, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes load-h4 {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes load-list {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+body {
+  background: url("/Secondary Files/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+  overflow-y: hidden;
+}
+body .help-container {
+  background-color: rgb(14, 14, 14);
+  height: 70svh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body .help-container .help-title {
+  color: rgb(154, 189, 169);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+body .help-container .problem {
+  color: rgba(255, 255, 255, 0.6);
+}
+body .help-container .problem span {
+  text-decoration: underline;
+}
+body .help-container .help-wrapper h4 {
+  color: white;
+  transform: translateX(150%);
+  animation: load-h4 1000ms ease-out 0s 1 forwards;
+}
+body .help-container .help-wrapper .item-1, body .help-container .help-wrapper .item-2, body .help-container .help-wrapper .item-3, body .help-container .help-wrapper .item-4, body .help-container .help-wrapper .item-5 {
+  color: rgb(154, 189, 169);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+  transform: translateX(-150%);
+  animation: load-list 1000ms ease-out 0s 1 forwards;
+}
+body .help-container::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=help-styles.css.map */
