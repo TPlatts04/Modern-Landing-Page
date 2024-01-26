@@ -40,7 +40,7 @@
 body {
   height: 100svh;
   width: 100vw;
-  background: url("./Secondary Files/bg-image.jpg");
+  background: url("../Secondary Files/bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
